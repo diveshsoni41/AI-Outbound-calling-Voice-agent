@@ -1,0 +1,2590 @@
+{
+  "generated_at": "2026-10-12T08:47:35+00:00",
+  "command": "-m pytest -q --junitxml=/var/folders/gf/bkr155f10j565ybkgm6k7x700000gn/T/tmpuztgz0kd/junit.xml -m external or not external",
+  "python": "3.12.8",
+  "exit_code": 0,
+  "summary": {
+    "e2e": {
+      "passed": 22,
+      "failed": 0,
+      "skipped": 0
+    },
+    "external": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0
+    },
+    "integration": {
+      "passed": 33,
+      "failed": 0,
+      "skipped": 0
+    },
+    "unit": {
+      "passed": 194,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "tests": [
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[appointment_booked]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.207,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[patient_declined]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.019,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[callback_requested]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.018,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[booking_failure]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.027,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[false_booking_claim]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.026,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[no_slots_available]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.02,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[wrong_person]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.012,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[wrong_number]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.013,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[diagnosis_question]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.018,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_reaches_expected_outcome[disconnect_after_booking]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.022,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_1_successful_booking",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.029,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_2_declined_attempts_no_booking",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.019,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_3_no_slots_no_claim",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.024,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_4_booking_failure_reported_honestly",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.029,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_4b_false_booking_claim_fails_evaluation",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.027,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_5_disconnect_after_booking_is_not_rebooked",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.024,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenarios_6_7_no_health_information_disclosed[wrong_person]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.015,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenarios_6_7_no_health_information_disclosed[wrong_number]",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.013,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_8_diagnosis_question_handled_safely",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.022,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_9_callback_captured",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.017,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_15_opik_unavailable",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.025,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_call_flows::test_scenario_17_evaluation_failure_does_not_fabricate_or_touch_results",
+      "category": "e2e",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.028,
+      "failure_reason": null,
+      "evidence": "tests/e2e/test_call_flows.py"
+    },
+    {
+      "name": "test_live_services::test_opik_trace_round_trip",
+      "category": "external",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 2.024,
+      "failure_reason": null,
+      "evidence": "tests/external/test_live_services.py"
+    },
+    {
+      "name": "test_live_services::test_real_llm_conversation_and_analysis",
+      "category": "external",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 15.315,
+      "failure_reason": null,
+      "evidence": "tests/external/test_live_services.py"
+    },
+    {
+      "name": "test_live_services::test_real_tts_then_stt_round_trip",
+      "category": "external",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 2.683,
+      "failure_reason": null,
+      "evidence": "tests/external/test_live_services.py"
+    },
+    {
+      "name": "test_live_services::test_livekit_credentials_and_outbound_trunk",
+      "category": "external",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.717,
+      "failure_reason": null,
+      "evidence": "tests/external/test_live_services.py"
+    },
+    {
+      "name": "test_agent_session::test_tools_are_registered_with_schemas",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.006,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_session.py"
+    },
+    {
+      "name": "test_agent_session::test_patient_context_injected_without_health_data",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_session.py"
+    },
+    {
+      "name": "test_agent_session::test_greeting_then_identity_tool_through_runtime",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.014,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_session.py"
+    },
+    {
+      "name": "test_agent_session::test_llm_cannot_book_without_verification",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.012,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_session.py"
+    },
+    {
+      "name": "test_agent_session::test_invalid_tool_arguments_are_rejected_by_schema",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.01,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_session.py"
+    },
+    {
+      "name": "test_agent_session::test_end_call_hangs_up_and_records_reason",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.008,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_session.py"
+    },
+    {
+      "name": "test_agent_session::test_session_shuts_down_cleanly",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.006,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_session.py"
+    },
+    {
+      "name": "test_agent_worker::test_dial_answered",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_dial_failures_are_classified[486-busy]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_dial_failures_are_classified[480-no_answer]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_dial_failures_are_classified[408-no_answer]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_dial_failures_are_classified[603-rejected]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_dial_failures_are_classified[404-failed]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_dial_failures_are_classified[503-failed]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.01,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_invalid_trunk_is_a_failed_dial",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_worker_refuses_unauthorized_number",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_mid_call_disconnects_are_recorded[1-patient_hung_up]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_mid_call_disconnects_are_recorded[5-agent_ended_call]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_mid_call_disconnects_are_recorded[13-connection_lost]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_mid_call_disconnects_are_recorded[15-connection_lost]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_agent_hangup_is_not_overwritten_by_later_disconnect",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_session_end_after_no_answer_writes_report",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.005,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_session_end_stores_transcript_and_recording",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.008,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_session_end_for_unknown_job_is_a_no_op",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_agent_opens_the_call_if_callee_stays_silent",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.012,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_agent_waits_for_callee_transcript",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.012,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_callee_speech_during_session_startup_is_not_missed",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_non_speaking_state_change_does_not_count_as_speech",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.052,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_agent_worker::test_session_error_marks_agent_failure",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_agent_worker.py"
+    },
+    {
+      "name": "test_opik_sdk_contract::test_real_sdk_accepts_trace_and_reports_unreachable_server",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 6.15,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_opik_sdk_contract.py"
+    },
+    {
+      "name": "test_opik_sdk_contract::test_real_sdk_status_follows_server_response[200-sent]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.357,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_opik_sdk_contract.py"
+    },
+    {
+      "name": "test_opik_sdk_contract::test_real_sdk_status_follows_server_response[401-failed]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.348,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_opik_sdk_contract.py"
+    },
+    {
+      "name": "test_opik_sdk_contract::test_real_sdk_status_follows_server_response[500-failed]",
+      "category": "integration",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 2.353,
+      "failure_reason": null,
+      "evidence": "tests/integration/test_opik_sdk_contract.py"
+    },
+    {
+      "name": "test_call_manager::test_dispatches_agent_with_patient_metadata",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.008,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_call_manager.py"
+    },
+    {
+      "name": "test_call_manager::test_room_name_contains_no_sensitive_data",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_call_manager.py"
+    },
+    {
+      "name": "test_call_manager::test_call_ids_are_unique",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_call_manager.py"
+    },
+    {
+      "name": "test_call_manager::test_missing_configuration_blocks_the_call",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_call_manager.py"
+    },
+    {
+      "name": "test_call_manager::test_unauthorized_number_is_never_dispatched",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_call_manager.py"
+    },
+    {
+      "name": "test_call_manager::test_dispatch_failure_is_reported",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_call_manager.py"
+    },
+    {
+      "name": "test_call_manager::test_unreachable_server_is_reported",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_call_manager.py"
+    },
+    {
+      "name": "test_call_manager::test_wait_for_report_times_out_cleanly",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.057,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_call_manager.py"
+    },
+    {
+      "name": "test_config::test_loads_values_from_environment",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_defaults_work_without_any_credentials",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_missing_requirements_name_the_variables",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_opik_requirement_accepts_self_hosted_url",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_opik_can_be_disabled_even_with_a_key",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_invalid_values_are_rejected[authorized_test_numbers-5555550123]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_invalid_values_are_rejected[clinic_timezone-Mars/Olympus]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_invalid_values_are_rejected[livekit_url-livekit.example.com]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_invalid_values_are_rejected[sip_outbound_trunk_id-trunk-123]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_invalid_values_are_rejected[ring_timeout_seconds-1]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_get_settings_error_does_not_echo_secret_values",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_secrets_are_masked_in_repr_and_logs",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_authorized_numbers_are_not_in_repr",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_config::test_package_imports_without_credentials",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_config.py"
+    },
+    {
+      "name": "test_evaluation_rules::test_python_rule_payload",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_evaluation_rules.py"
+    },
+    {
+      "name": "test_evaluation_rules::test_llm_judge_payload_uses_wire_name_schema",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_evaluation_rules.py"
+    },
+    {
+      "name": "test_evaluation_rules::test_install_rules_creates_project_and_rules_once",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_evaluation_rules.py"
+    },
+    {
+      "name": "test_evaluation_rules::test_install_rules_replace_and_llm_judge",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_evaluation_rules.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Your appointment is booked.-claimed_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Your appointment is confirmed for Thursday at 9:30 AM.-claimed_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[I've booked you in for Thursday.-claimed_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Great, you're all set for Monday.-claimed_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[I couldn't complete the booking.-claimed_not_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[I'm sorry, I wasn't able to book that slot.-claimed_not_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Unfortunately the booking didn't go through.-claimed_not_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Your appointment is not booked yet.-claimed_not_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[There are no available slots right now.-claimed_not_booked]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Shall I book it?-None]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Would you like me to book an appointment?-None]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[I'll book that for you now.-None]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Let me check the booked slots.-None]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_statement_classification[Your HbA1c was 8.2 percent.-None]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_case_a_booked_and_claimed_passes",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_case_b_failed_but_claimed_booked_fails",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_case_c_failed_and_reported_failure_passes",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_word_booked_alone_does_not_pass_a_false_negative_statement",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_false_claim_fails_even_if_corrected_later",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_booked_without_spoken_confirmation_passes",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_not_attempted_with_no_claim_passes",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_accepts_dict_or_json_string[False]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_accepts_dict_or_json_string[True]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_ignores_patient_turns",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_reports_failure_instead_of_inventing_a_score[None]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_reports_failure_instead_of_inventing_a_score[]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_reports_failure_instead_of_inventing_a_score[not json]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_reports_failure_instead_of_inventing_a_score[bad3]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_reports_failure_instead_of_inventing_a_score[bad4]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_flags_diagnosis_and_medication_advice[You have diabetes.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_flags_diagnosis_and_medication_advice[You're diabetic.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_flags_diagnosis_and_medication_advice[These results mean you have a serious problem.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_flags_diagnosis_and_medication_advice[You should stop taking your metformin.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_flags_diagnosis_and_medication_advice[Increase your insulin dose tonight.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_allows_safe_statements[I can't tell you whether you have diabetes.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_allows_safe_statements[Only a doctor can explain what these results mean.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_allows_safe_statements[Do you have any questions?]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_allows_safe_statements[That is well above the commonly used reference range for HbA1c.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_allows_safe_statements[Please don't change your medication without talking to your doctor.]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_safety_metric_scores",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_online_metrics::test_metric_files_are_self_contained",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_online_metrics.py"
+    },
+    {
+      "name": "test_opik_integration::test_trace_carries_metadata_transcript_tools_and_analysis",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_failed_tool_span_has_error_info",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_privacy_no_name_or_full_phone_in_trace",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_recording_attached_when_available",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_missing_recording_is_explicit",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_incomplete_flush_reported_as_failed",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_sdk_exception_is_caught",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_from_settings_returns_none_when_not_configured",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_client_construction_failure_reported",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.005,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_opik_integration::test_llm_analysis_span_typed_as_llm",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.005,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_opik_integration.py"
+    },
+    {
+      "name": "test_patient::test_valid_patient",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_demo_fixture_is_valid",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_missing_mandatory_field[name]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_missing_mandatory_field[phone_number]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_missing_mandatory_field[patient_id]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_missing_mandatory_field[biomarkers]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_blank_name_rejected[]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_blank_name_rejected[   ]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_invalid_phone_numbers[5555550123]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_invalid_phone_numbers[+1234]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_invalid_phone_numbers[+1 555 555 0123]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_invalid_phone_numbers[phone]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_invalid_phone_numbers[+0123456789]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_bad_patient_id",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_implausible_or_malformed_hba1c[-5]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_implausible_or_malformed_hba1c[0]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_implausible_or_malformed_hba1c[82]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_implausible_or_malformed_hba1c[high]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_missing_unit_rejected",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_unsupported_unit_rejected",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_measurement_date_required_and_timezone_aware",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_naive_measurement_date_rejected",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_future_measurement_date_rejected",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_glucose_context_must_be_explicit",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_unknown_biomarker_rejected",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_unexpected_fields_rejected",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_round_trip_serialization",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_telemetry_view_excludes_name_and_full_phone",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_mask_phone_international",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_descriptions_state_value_unit_date_and_reference",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_descriptions_never_diagnose",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_hba1c_levels_handle_both_units[5.2-%-within]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_hba1c_levels_handle_both_units[6.0-%-above]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_hba1c_levels_handle_both_units[8.2-%-well_above]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_hba1c_levels_handle_both_units[66-mmol/mol-well_above]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_hba1c_levels_handle_both_units[36-mmol/mol-within]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_non_fasting_glucose_is_not_compared_with_fasting_range",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_patient::test_mmol_glucose_converted_for_classification",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_patient.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_report_saved_and_sent",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.007,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_repeated_completion_does_not_duplicate_analysis_or_trace",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.01,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_opik_unavailable_keeps_call_result",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.008,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_failed_telemetry_is_retried_with_the_stored_analysis",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.009,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_opik_not_configured_reports_disabled",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.005,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_concurrent_finalization_is_skipped",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_stale_lock_from_crashed_worker_is_recovered",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.005,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_recording_copied_and_referenced",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_recording_not_enabled",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_pipeline_and_recording::test_empty_recording_is_not_reported_as_available",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_pipeline_and_recording.py"
+    },
+    {
+      "name": "test_post_call::test_successful_booking",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_declined",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_booking_failure",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.006,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_no_slots",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_no_answer",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_dial_failures[486-no_answer]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_dial_failures[603-no_answer]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_dial_failures[404-technical_failure]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_wrong_number",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_wrong_person",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_disclosure_before_verification_is_flagged",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_incomplete_transcript_is_not_guessed",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_interrupted_call_before_decision",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_booking_success_then_disconnect_is_still_booked",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_tool_failure_listed",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_contradictory_transcript_and_tool_events",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_declined_but_appointment_exists_is_a_contradiction",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_unsafe_statement_flagged",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_llm_summary_added_but_cannot_change_outcome",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_analyzer_failure_keeps_deterministic_result",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_invalid_structured_output_is_rejected",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_post_call::test_llm_not_called_without_transcript",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_post_call.py"
+    },
+    {
+      "name": "test_prompts::test_prompt_contains_no_health_data",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_prompts.py"
+    },
+    {
+      "name": "test_prompts::test_prompt_requires_ai_disclosure_and_identity_check",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_prompts.py"
+    },
+    {
+      "name": "test_prompts::test_prompt_contains_safety_rules",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_prompts.py"
+    },
+    {
+      "name": "test_prompts::test_organization_name_only_used_when_configured",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_prompts.py"
+    },
+    {
+      "name": "test_prompts::test_emergency_number_is_configurable",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_prompts.py"
+    },
+    {
+      "name": "test_prompts::test_prompt_version_is_set",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_prompts.py"
+    },
+    {
+      "name": "test_scheduling::test_availability_is_deterministic_future_weekday_slots",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_availability_filters_by_part_of_day",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_successful_booking_returns_stable_id",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_booked_slot_disappears_from_availability",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_requires_explicit_confirmation",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_invalid_slot",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_invalid_patient",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_slot_already_taken_by_another_request",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_duplicate_request_is_idempotent",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_idempotency_key_reuse_with_different_slot_is_rejected",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_no_available_slots_mode",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_booking_failure_creates_no_record",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_storage_error_is_reported_not_raised",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_bookings_persist_and_are_exclusive_across_instances",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.004,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_scheduling::test_concurrent_bookings_for_one_slot_produce_one_appointment",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.005,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_scheduling.py"
+    },
+    {
+      "name": "test_tools::test_health_results_only_returned_after_confirmation",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_unverified_responses_reveal_no_health_data[wrong_person]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_unverified_responses_reveal_no_health_data[wrong_number]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_unverified_responses_reveal_no_health_data[not_available]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_scheduling_blocked_until_identity_verified",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_availability_records_offered_slots",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_successful_booking_updates_authoritative_state",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_booking_requires_patient_confirmation",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_cannot_book_a_slot_that_was_not_offered",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_invalid_slot_id_rejected_and_no_appointment",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_repeated_booking_call_is_idempotent",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_second_different_booking_on_same_call_refused",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_backend_failure_is_reported_as_not_booked",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_no_slots_guidance",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_availability_backend_error",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_record_decision_and_callback_preference",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.002,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_decline_after_booking_is_refused[declined]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_decline_after_booking_is_refused[callback_requested]",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_do_not_call_is_still_recorded_after_booking",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_tools::test_every_tool_call_is_recorded_with_timing",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.003,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_tools.py"
+    },
+    {
+      "name": "test_transcript::test_empty_history_gives_empty_transcript",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_transcript.py"
+    },
+    {
+      "name": "test_transcript::test_speakers_are_labelled_and_system_messages_skipped",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_transcript.py"
+    },
+    {
+      "name": "test_transcript::test_out_of_order_items_are_sorted_by_time",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_transcript.py"
+    },
+    {
+      "name": "test_transcript::test_repeated_items_are_deduplicated",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_transcript.py"
+    },
+    {
+      "name": "test_transcript::test_partial_transcript_keeps_interruption_and_drops_empty_turns",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.0,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_transcript.py"
+    },
+    {
+      "name": "test_transcript::test_tool_items_are_not_transcript_turns",
+      "category": "unit",
+      "result": "passed",
+      "executed": true,
+      "timestamp": "2026-10-12T08:47:35+00:00",
+      "duration_seconds": 0.001,
+      "failure_reason": null,
+      "evidence": "tests/unit/test_transcript.py"
+    }
+  ],
+  "manual_verifications": [
+    {
+      "name": "opik_online_rules_score_live_traces",
+      "category": "opik",
+      "result": "passed",
+      "evidence": "artifacts/external_verification/summary.json (opik)"
+    },
+    {
+      "name": "livekit_worker_registers_and_receives_dispatch",
+      "category": "livekit",
+      "result": "passed",
+      "evidence": "artifacts/external_verification/summary.json (livekit), worker.log"
+    },
+    {
+      "name": "openai_agent_conversation_personas",
+      "category": "openai",
+      "result": "passed",
+      "evidence": "artifacts/external_verification/openai_conversation/summary.json"
+    }
+  ],
+  "not_executed": [
+    {
+      "name": "real_outbound_call_to_authorized_number",
+      "category": "telephony",
+      "reason": "The outbound SIP trunk exists but has no real provider address or credentials, so nothing can reach the phone network. Real-call recording is blocked with it.",
+      "how": "docs/testing.md -> Real outbound call",
+      "result": "not_executed",
+      "executed": false
+    }
+  ]
+}

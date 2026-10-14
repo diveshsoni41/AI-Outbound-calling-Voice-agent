@@ -1,0 +1,189 @@
+{
+  "record": {
+    "call_id": "call_a982fa5170464e03",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "gpt-4.1-mini",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T16:36:40.186680Z",
+    "answered_at": "2026-10-11T16:36:40.186689Z",
+    "ended_at": "2026-10-11T16:36:48.548061Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "agent_ended_call",
+    "termination_detail": null,
+    "identity_status": "verified",
+    "health_info_disclosed": true,
+    "patient_decision": "declined",
+    "callback_preference": null,
+    "offered_slot_ids": [],
+    "appointment": null,
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "confirmed"
+        },
+        "result": {
+          "status": "verified",
+          "health_results": [
+            "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+            "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+          ],
+          "guidance": "Share these results in plain language, one at a time, without adding any diagnosis or interpretation beyond this text. Then offer to book a consultation with a doctor."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:36:42.633586Z",
+        "ended_at": "2026-10-11T16:36:42.633862Z"
+      },
+      {
+        "tool_name": "record_patient_decision",
+        "arguments": {
+          "decision": "declined",
+          "callback_preference": null
+        },
+        "result": {
+          "status": "recorded",
+          "decision": "declined"
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:36:46.350269Z",
+        "ended_at": "2026-10-11T16:36:46.350295Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T16:36:40.188633Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hello, this is an AI assistant calling from your care team. Am I speaking with Rahul?",
+        "timestamp": "2026-10-11T16:36:40.196450Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, this is Rahul.",
+        "timestamp": "2026-10-11T16:36:41.544982Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Rahul, your fasting blood glucose reading from October first, 2026 was one hundred eighty milligrams per deciliter. That is noted as being well above the commonly used reference range. Do you have any questions about this result?",
+        "timestamp": "2026-10-11T16:36:42.645836Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Does this mean I have diabetes?",
+        "timestamp": "2026-10-11T16:36:43.825667Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "I can't answer that question. A doctor can explain what these results mean for you. Would you like me to help you book a consultation with a doctor to discuss this?",
+        "timestamp": "2026-10-11T16:36:43.837068Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Not right now, thanks.",
+        "timestamp": "2026-10-11T16:36:45.220434Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Okay, Rahul, I have noted that for you. If you need any help later, just let us know. Thank you for your time. Goodbye.",
+        "timestamp": "2026-10-11T16:36:46.365310Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_a982fa5170464e03",
+    "analyzer_version": "1.0.1",
+    "analyzed_at": "2026-10-11T16:36:48.551902Z",
+    "outcome": "patient_declined",
+    "outcome_reason": "Patient declined a consultation.",
+    "call_completed": true,
+    "patient_reached": true,
+    "identity_verified": true,
+    "booking_status": "not_attempted",
+    "appointment_id": null,
+    "appointment_start": null,
+    "appointment_timezone": null,
+    "no_booking_reason": "Patient declined a consultation.",
+    "callback_preference": null,
+    "biomarkers_discussed": [
+      "blood_glucose"
+    ],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking.",
+      "claims": []
+    },
+    "safety_flags": [],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": {
+      "summary": "The AI assistant informed Rahul about his fasting blood glucose result being well above the reference range. Rahul asked if this meant he has diabetes, but the assistant declined to answer and offered to book a doctor consultation, which Rahul declined. The call ended with the assistant noting Rahul's preference.",
+      "patient_interest": "not_interested",
+      "patient_concerns": [
+        "Whether the high blood glucose means he has diabetes"
+      ],
+      "unresolved_questions": [
+        "Does this mean I have diabetes?"
+      ],
+      "safety_concerns": []
+    },
+    "qualitative_source": "llm",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "sent",
+    "trace_id": "01a12bd2-fc3f-7a8e-aa2e-897c8fa6c9c0",
+    "project_name": "Opik Demo Agent Observability",
+    "project_url": "https://www.comet.com/opik/divesh-soni/redirect/projects?name=Opik%20Demo%20Agent%20Observability",
+    "error": null,
+    "attempted_at": "2026-10-11T16:36:49.855793Z"
+  }
+}

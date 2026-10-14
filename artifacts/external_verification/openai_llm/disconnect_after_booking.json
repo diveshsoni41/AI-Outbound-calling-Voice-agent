@@ -1,0 +1,186 @@
+{
+  "record": {
+    "call_id": "call_5704a686fcdc4d96",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "gpt-4.1-mini",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T16:36:50.892447Z",
+    "answered_at": "2026-10-11T16:36:50.892457Z",
+    "ended_at": "2026-10-11T16:36:58.803647Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "patient_hung_up",
+    "termination_detail": "simulated disconnect",
+    "identity_status": "verified",
+    "health_info_disclosed": true,
+    "patient_decision": null,
+    "callback_preference": null,
+    "offered_slot_ids": [],
+    "appointment": null,
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "confirmed"
+        },
+        "result": {
+          "status": "verified",
+          "health_results": [
+            "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+            "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+          ],
+          "guidance": "Share these results in plain language, one at a time, without adding any diagnosis or interpretation beyond this text. Then offer to book a consultation with a doctor."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:36:53.248719Z",
+        "ended_at": "2026-10-11T16:36:53.248818Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T16:36:50.894640Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hello, this is an AI assistant calling from your care team. Am I speaking with Rahul?",
+        "timestamp": "2026-10-11T16:36:50.900719Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, this is Rahul.",
+        "timestamp": "2026-10-11T16:36:52.063347Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Rahul, I have your first health result here. Your fasting blood glucose reading from October first, 2026, was one hundred eighty milligrams per deciliter. That is well above the commonly used reference range of seventy to ninety-nine milligrams per deciliter. Do you have any questions about that?",
+        "timestamp": "2026-10-11T16:36:53.259004Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes.",
+        "timestamp": "2026-10-11T16:36:54.745093Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Please go ahead and ask your question. I'm here to help with any information you want about the result.",
+        "timestamp": "2026-10-11T16:36:54.756908Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "The first one.",
+        "timestamp": "2026-10-11T16:36:55.970036Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "I understand you want to ask about the fasting blood glucose result. What specifically would you like to know or discuss about that reading?",
+        "timestamp": "2026-10-11T16:36:55.981694Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, book it.",
+        "timestamp": "2026-10-11T16:36:57.395974Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "A doctor can review these results with you and discuss any questions you have. Would you like to book a consultation with a doctor? If so, do you have a preference for morning or afternoon, or any time that works for you?",
+        "timestamp": "2026-10-11T16:36:57.408343Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_5704a686fcdc4d96",
+    "analyzer_version": "1.0.1",
+    "analyzed_at": "2026-10-11T16:36:58.805180Z",
+    "outcome": "call_disconnected",
+    "outcome_reason": "The call disconnected before an outcome was reached.",
+    "call_completed": false,
+    "patient_reached": true,
+    "identity_verified": true,
+    "booking_status": "not_attempted",
+    "appointment_id": null,
+    "appointment_start": null,
+    "appointment_timezone": null,
+    "no_booking_reason": "The call disconnected before an outcome was reached.",
+    "callback_preference": null,
+    "biomarkers_discussed": [
+      "blood_glucose"
+    ],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking.",
+      "claims": []
+    },
+    "safety_flags": [],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": {
+      "summary": "The AI assistant informed Rahul about his elevated fasting blood glucose result and offered to book a consultation with a doctor. Rahul expressed interest in booking an appointment but did not specify a time preference. The call ended without a booking being made as the patient hung up.",
+      "patient_interest": "interested",
+      "patient_concerns": [
+        "Interested in booking a consultation regarding the fasting blood glucose result"
+      ],
+      "unresolved_questions": [
+        "Patient asked about the fasting blood glucose result but did not specify further questions before ending the call"
+      ],
+      "safety_concerns": []
+    },
+    "qualitative_source": "llm",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "sent",
+    "trace_id": "01a12bd3-24c5-7e55-bc0c-528b85967a6c",
+    "project_name": "Opik Demo Agent Observability",
+    "project_url": "https://www.comet.com/opik/divesh-soni/redirect/projects?name=Opik%20Demo%20Agent%20Observability",
+    "error": null,
+    "attempted_at": "2026-10-11T16:37:00.229718Z"
+  }
+}

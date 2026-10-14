@@ -1,0 +1,45 @@
+{"message": "starting worker", "level": "INFO", "name": "livekit.agents", "version": "1.8.6", "rtc-version": "1.1.20", "pid": 7603, "timestamp": "2026-10-11T16:58:13.058088+00:00"}
+{"message": "plugin registered", "level": "INFO", "name": "livekit.agents", "plugin": "livekit.plugins.openai", "version": "1.8.6", "pid": 7603, "timestamp": "2026-10-11T16:58:13.058254+00:00"}
+{"message": "plugin registered", "level": "INFO", "name": "livekit.agents", "plugin": "livekit.plugins.silero", "version": "1.8.6", "pid": 7603, "timestamp": "2026-10-11T16:58:13.058312+00:00"}
+{"message": "HTTP server listening on :8081", "level": "INFO", "name": "livekit.agents", "pid": 7603, "timestamp": "2026-10-11T16:58:13.058955+00:00"}
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7635, "timestamp": "2026-10-11T16:58:13.158437+00:00"}
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7636, "timestamp": "2026-10-11T16:58:13.158850+00:00"}
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7637, "timestamp": "2026-10-11T16:58:13.158947+00:00"}
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7638, "timestamp": "2026-10-11T16:58:13.159401+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7636, "elapsed_time": 5.17, "timestamp": "2026-10-11T16:58:18.330476+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7638, "elapsed_time": 5.18, "timestamp": "2026-10-11T16:58:18.335282+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7635, "elapsed_time": 5.18, "timestamp": "2026-10-11T16:58:18.335427+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7637, "elapsed_time": 5.18, "timestamp": "2026-10-11T16:58:18.335508+00:00"}
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7667, "timestamp": "2026-10-11T16:58:18.357521+00:00"}
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7668, "timestamp": "2026-10-11T16:58:18.359437+00:00"}
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7669, "timestamp": "2026-10-11T16:58:18.359662+00:00"}
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7670, "timestamp": "2026-10-11T16:58:18.359785+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7668, "elapsed_time": 3.89, "timestamp": "2026-10-11T16:58:22.253992+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7667, "elapsed_time": 3.91, "timestamp": "2026-10-11T16:58:22.263418+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7669, "elapsed_time": 3.9, "timestamp": "2026-10-11T16:58:22.264557+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7670, "elapsed_time": 3.91, "timestamp": "2026-10-11T16:58:22.266400+00:00"}
+{"message": "registered worker", "level": "INFO", "name": "livekit.agents", "agent_name": "healthcare-outbound-agent", "deployment": "", "id": "AW_XQFU3EQM4oi6", "url": "wss://demo-project-gu9j7erv.livekit.cloud", "region": "India South", "protocol": 17, "pid": 7603, "timestamp": "2026-10-11T16:58:22.460094+00:00"}
+{"message": "received job request", "level": "INFO", "name": "livekit.agents", "job_id": "AJ_v8U2gAuPznY7", "dispatch_id": "AD_WmkFCqw3aLn6", "room": "outbound-call_9f6be1f645df4bde", "room_id": "RM_NscoSMajzMdY", "agent_name": "healthcare-outbound-agent", "resuming": false, "enable_recording": true, "pid": 7603, "timestamp": "2026-10-11T16:58:44.278174+00:00"}
+OPIK: Started logging traces to the "Opik Demo Agent Observability" project at https://www.comet.com/opik/api/v1/session/redirect/projects/?trace_id=01a12be7-0c47-7faf-9df1-e47bcd158b8b&path=aHR0cHM6Ly93d3cuY29tZXQuY29tL29waWsvYXBpLw==.
+{"message": "call finalized", "level": "INFO", "name": "healthcare_agent.pipeline", "call_id": "call_9f6be1f645df4bde", "outcome": "technical_failure", "telemetry": "sent", "pid": 7636, "job_id": "AJ_v8U2gAuPznY7", "room": "outbound-call_9f6be1f645df4bde", "room_id": "RM_NscoSMajzMdY", "timestamp": "2026-10-11T16:58:46.318839+00:00"}
+{"message": "process exiting", "level": "INFO", "name": "livekit.agents", "reason": "call not connected", "pid": 7636, "job_id": "AJ_v8U2gAuPznY7", "room": "outbound-call_9f6be1f645df4bde", "room_id": "RM_NscoSMajzMdY", "timestamp": "2026-10-11T16:58:46.319544+00:00"}
+Exception ignored in: <function FfiHandle.__del__ at 0x103d18a40>
+Traceback (most recent call last):
+  File "/Users/shrihari/Adit assignment /.venv/lib/python3.12/site-packages/livekit/rtc/_ffi_client.py", line 77, in __del__
+    self.dispose()
+  File "/Users/shrihari/Adit assignment /.venv/lib/python3.12/site-packages/livekit/rtc/_ffi_client.py", line 99, in dispose
+    assert dropped
+           ^^^^^^^
+AssertionError: 
+Exception ignored in: <function FfiHandle.__del__ at 0x103d18a40>
+Traceback (most recent call last):
+  File "/Users/shrihari/Adit assignment /.venv/lib/python3.12/site-packages/livekit/rtc/_ffi_client.py", line 77, in __del__
+    self.dispose()
+  File "/Users/shrihari/Adit assignment /.venv/lib/python3.12/site-packages/livekit/rtc/_ffi_client.py", line 99, in dispose
+    assert dropped
+           ^^^^^^^
+AssertionError: 
+{"message": "initializing process", "level": "INFO", "name": "livekit.agents", "pid": 7915, "timestamp": "2026-10-11T16:58:47.940216+00:00"}
+{"message": "process initialized", "level": "INFO", "name": "livekit.agents", "pid": 7915, "elapsed_time": 3.24, "timestamp": "2026-10-11T16:58:51.181861+00:00"}
+{"message": "draining worker", "level": "INFO", "name": "livekit.agents", "id": "AW_XQFU3EQM4oi6", "timeout": 3600, "pid": 7603, "timestamp": "2026-10-11T16:59:44.636064+00:00"}
+{"message": "shutting down worker", "level": "INFO", "name": "livekit.agents", "id": "AW_XQFU3EQM4oi6", "pid": 7603, "timestamp": "2026-10-11T16:59:44.663514+00:00"}

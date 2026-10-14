@@ -1,0 +1,140 @@
+{
+  "record": {
+    "call_id": "call_3bd86b113bf3452a",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "scripted-llm (simulation)",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T16:30:43.689240Z",
+    "answered_at": "2026-10-11T16:30:43.689254Z",
+    "ended_at": "2026-10-11T16:30:43.705368Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "agent_ended_call",
+    "termination_detail": null,
+    "identity_status": "wrong_person",
+    "health_info_disclosed": false,
+    "patient_decision": null,
+    "callback_preference": null,
+    "offered_slot_ids": [],
+    "appointment": null,
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "wrong_person"
+        },
+        "result": {
+          "status": "wrong_person",
+          "guidance": "Do not share any health information or details about why you are calling. You may ask if there is a better time to reach Rahul, then thank them and end the call."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:30:43.702255Z",
+        "ended_at": "2026-10-11T16:30:43.702295Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T16:30:43.695748Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hi, this is an AI assistant calling from your care team about a healthcare follow-up. Am I speaking with Rahul?",
+        "timestamp": "2026-10-11T16:30:43.698466Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "No, this is his wife. Rahul is at work.",
+        "timestamp": "2026-10-11T16:30:43.699261Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you. We'll try to reach Rahul another time. Have a good day, goodbye.",
+        "timestamp": "2026-10-11T16:30:43.704241Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_3bd86b113bf3452a",
+    "analyzer_version": "1.0.0",
+    "analyzed_at": "2026-10-11T16:30:43.707126Z",
+    "outcome": "identity_not_verified",
+    "outcome_reason": "Patient identity not verified (wrong_person); no health details shared.",
+    "call_completed": true,
+    "patient_reached": false,
+    "identity_verified": false,
+    "booking_status": "not_attempted",
+    "appointment_id": null,
+    "appointment_start": null,
+    "appointment_timezone": null,
+    "no_booking_reason": "Patient identity not verified (wrong_person); no health details shared.",
+    "callback_preference": null,
+    "biomarkers_discussed": [],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking.",
+      "claims": []
+    },
+    "safety_flags": [],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": {
+      "summary": "The AI assistant called to follow up on healthcare but reached the patient's wife instead of Rahul. The assistant acknowledged the situation and ended the call, stating they would try to reach Rahul another time.",
+      "patient_interest": "unknown",
+      "patient_concerns": [],
+      "unresolved_questions": [],
+      "safety_concerns": []
+    },
+    "qualitative_source": "llm",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "sent",
+    "trace_id": "01a12bcd-6b1e-7341-9e56-a06d016c8f5e",
+    "project_name": "Opik Demo Agent Observability",
+    "project_url": "https://www.comet.com/opik/divesh-soni/redirect/projects?name=Opik%20Demo%20Agent%20Observability",
+    "error": null,
+    "attempted_at": "2026-10-11T16:30:45.022637Z"
+  }
+}

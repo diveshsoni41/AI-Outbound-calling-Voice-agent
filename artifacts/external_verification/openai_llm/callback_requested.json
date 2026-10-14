@@ -1,0 +1,175 @@
+{
+  "record": {
+    "call_id": "call_2919b26b0b8a4c6b",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "gpt-4.1-mini",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T16:35:40.859106Z",
+    "answered_at": "2026-10-11T16:35:40.859117Z",
+    "ended_at": "2026-10-11T16:35:46.499405Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "agent_ended_call",
+    "termination_detail": null,
+    "identity_status": "verified",
+    "health_info_disclosed": true,
+    "patient_decision": "callback_requested",
+    "callback_preference": "Thursday after 5pm",
+    "offered_slot_ids": [],
+    "appointment": null,
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "confirmed"
+        },
+        "result": {
+          "status": "verified",
+          "health_results": [
+            "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+            "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+          ],
+          "guidance": "Share these results in plain language, one at a time, without adding any diagnosis or interpretation beyond this text. Then offer to book a consultation with a doctor."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:35:43.369844Z",
+        "ended_at": "2026-10-11T16:35:43.370111Z"
+      },
+      {
+        "tool_name": "record_patient_decision",
+        "arguments": {
+          "decision": "callback_requested",
+          "callback_preference": "Thursday after 5pm"
+        },
+        "result": {
+          "status": "recorded",
+          "decision": "callback_requested"
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:35:46.496699Z",
+        "ended_at": "2026-10-11T16:35:46.496717Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T16:35:40.861392Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hello, this is an AI assistant calling from your care team. Am I speaking with Rahul? This call is regarding a healthcare follow-up.",
+        "timestamp": "2026-10-11T16:35:40.867186Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, this is Rahul.",
+        "timestamp": "2026-10-11T16:35:42.179593Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you for confirming, Rahul. Your fasting blood glucose reading from October 1, 2026 was one hundred eighty milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is seventy to ninety-nine milligrams per deciliter. Do you have any questions about that?",
+        "timestamp": "2026-10-11T16:35:43.388204Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "I'm driving right now. Can you call me back Thursday after 5?",
+        "timestamp": "2026-10-11T16:35:45.159439Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "I will arrange for a call back on Thursday after 5 pm. Thank you for your time, Rahul. Goodbye.",
+        "timestamp": "2026-10-11T16:35:46.509616Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_2919b26b0b8a4c6b",
+    "analyzer_version": "1.0.1",
+    "analyzed_at": "2026-10-11T16:35:47.749179Z",
+    "outcome": "callback_requested",
+    "outcome_reason": "Patient asked to be called back.",
+    "call_completed": true,
+    "patient_reached": true,
+    "identity_verified": true,
+    "booking_status": "not_attempted",
+    "appointment_id": null,
+    "appointment_start": null,
+    "appointment_timezone": null,
+    "no_booking_reason": "Patient asked to be called back.",
+    "callback_preference": "Thursday after 5pm",
+    "biomarkers_discussed": [
+      "blood_glucose"
+    ],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking.",
+      "claims": []
+    },
+    "safety_flags": [],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": {
+      "summary": "The AI assistant called Rahul to inform him about his fasting blood glucose result, which was above the normal reference range. Rahul requested a callback on Thursday after 5 pm as he was driving at the time. The agent acknowledged the request and ended the call.",
+      "patient_interest": "undecided",
+      "patient_concerns": [
+        "Requested a callback at a specific time due to driving"
+      ],
+      "unresolved_questions": [],
+      "safety_concerns": []
+    },
+    "qualitative_source": "llm",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "sent",
+    "trace_id": "01a12bd2-0ee2-7658-a24b-68e75c2b8088",
+    "project_name": "Opik Demo Agent Observability",
+    "project_url": "https://www.comet.com/opik/divesh-soni/redirect/projects?name=Opik%20Demo%20Agent%20Observability",
+    "error": null,
+    "attempted_at": "2026-10-11T16:35:49.090541Z"
+  }
+}

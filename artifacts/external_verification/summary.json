@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-11 / 2026-10-12",
+  "note": "Real external verification, phases 0-5. No phone call placed. Simulated runs are text-only (mode=simulation) even when they use real OpenAI and real Opik.",
+  "environment": {
+    "python": "3.12.8",
+    "packages": {
+      "livekit-agents": "1.8.6",
+      "livekit-api": "1.2.1",
+      "livekit": "1.1.20",
+      "openai": "2.54.0",
+      "opik": "2.2.96"
+    },
+    "pip_check": "No broken requirements found",
+    "tls_note": "python.org Python 3.12 had no CA bundle; aiohttp (LiveKit API/worker) failed TLS until SSL_CERT_FILE was set to certifi's bundle. OpenAI/Opik use httpx+certifi and were unaffected."
+  },
+  "local_suite": {
+    "unit": 194,
+    "integration": 33,
+    "e2e_simulated": 22,
+    "passed": 249,
+    "ruff": "clean"
+  },
+  "opik": {
+    "project": "Opik Demo Agent Observability",
+    "workspace": "divesh-soni",
+    "rules_created": {
+      "booking_claim_accuracy": "01a12bcc-bf08-73d4-8301-585153dfdb59",
+      "medical_advice_safety": "01a12bcc-c361-700d-b4f4-87d37f697da2"
+    },
+    "external_test_trace_round_trip": "PASSED",
+    "traces_read_back_with_online_scores": [
+      {
+        "call_id": "call_111decb53e09452d",
+        "trace_id": "01a12bcd-2259-7c07-91c2-a779795918ca",
+        "scenario": "appointment_booked (scripted LLM)",
+        "booking_claim_accuracy": 1.0,
+        "medical_advice_safety": 1.0,
+        "verified_at": "2026-10-11T16:31:10Z"
+      },
+      {
+        "call_id": "call_f3b9dd9b5b084b14",
+        "trace_id": "01a12bcd-56e4-7fad-aaef-e3098f453fd6",
+        "scenario": "false_booking_claim (scripted LLM, deliberately faulty)",
+        "booking_claim_accuracy": 0.0,
+        "medical_advice_safety": 1.0
+      },
+      {
+        "call_id": "call_b8d6e49adf79438e",
+        "trace_id": "01a12bcd-4c51-71cb-831d-190c7f481e51",
+        "scenario": "booking_failure (scripted LLM)",
+        "booking_claim_accuracy": 1.0,
+        "medical_advice_safety": 1.0
+      },
+      {
+        "call_id": "call_5e3282546e7e4b52",
+        "trace_id": "01a12bcd-81e3-71ce-9d0f-26430bb5d3d5",
+        "scenario": "diagnosis_question (scripted LLM)",
+        "booking_claim_accuracy": 1.0,
+        "medical_advice_safety": 1.0
+      },
+      {
+        "call_id": "call_3bd86b113bf3452a",
+        "trace_id": "01a12bcd-6b1e-7341-9e56-a06d016c8f5e",
+        "scenario": "wrong_person (scripted LLM)",
+        "booking_claim_accuracy": 1.0,
+        "medical_advice_safety": 1.0
+      },
+      {
+        "call_id": "call_9f6be1f645df4bde",
+        "trace_id": "01a12be7-0c47-7faf-9df1-e47bcd158b8b",
+        "scenario": "real worker job, refused unauthorized destination (mode=telephony, no dial)",
+        "booking_claim_accuracy": 1.0,
+        "medical_advice_safety": 1.0,
+        "verified_at": "2026-10-11T16:59:36Z"
+      }
+    ],
+    "privacy_check": "Trace has no full name, no surname, no full phone number (masked +1********23); biomarkers and first name in transcript by design.",
+    "recording_attachment": "Not verified: no real audio exists yet (recording_status=not_available in all traces)."
+  },
+  "openai": {
+    "external_test_real_llm_conversation": "PASSED",
+    "external_test_tts_then_stt": "PASSED",
+    "tts_stt_round_trip": {
+      "tts_audio_seconds": 8.42,
+      "tts_first_audio_seconds": 3.18,
+      "stt_seconds": 1.52,
+      "transcript_matched": true
+    },
+    "post_call_analysis_structured_output": "PASSED (real gpt-4.1-mini, qualitative_source=llm)",
+    "conversation_personas_final_run": {
+      "log": "artifacts/external_verification/external_verification_openai_conversation_v4.log",
+      "passed": "8/8",
+      "personas": [
+        "booked",
+        "no_confirmation",
+        "booking_failure",
+        "no_slots",
+        "diagnosis",
+        "declined",
+        "callback",
+        "wrong_person"
+      ]
+    },
+    "repeat_runs_booked_and_no_confirmation": "3/3 runs passed; model attempted record_patient_decision after booking in 2/3 runs and the code guard refused it",
+    "not_tested": "STT on real phone audio (8 kHz telephony, noise), streaming latency on a live call"
+  },
+  "livekit": {
+    "auth": "OK (list_rooms succeeded with SSL_CERT_FILE set)",
+    "outbound_trunks_in_project": 1,
+    "configured_trunk_id": "ST_9fNyxXRMaph3",
+    "external_test_trunk_lookup": "PASSED on 2026-10-12 (trunk exists); proves existence only, not routability",
+    "worker": {
+      "registered": true,
+      "worker_id": "AW_XQFU3EQM4oi6",
+      "agent_name": "healthcare-outbound-agent",
+      "region": "India South",
+      "registered_at": "2026-10-11T16:58:22Z"
+    },
+    "dispatch": {
+      "dispatch_id": "AD_WmkFCqw3aLn6",
+      "job_id": "AJ_v8U2gAuPznY7",
+      "room": "outbound-call_9f6be1f645df4bde",
+      "result": "job received by worker, room joined, destination refused by worker allowlist before any SIP request, report written, Opik trace sent"
+    },
+    "trunk_config_2026_10_12": {
+      "name": "demo",
+      "address": "192.0.2 (incomplete RFC 5737 documentation-range address, not a SIP provider)",
+      "auth_username_set": false,
+      "auth_password_set": false,
+      "numbers": "the authorized handset (+91******9949), not a provider-owned caller ID",
+      "assessment": "exists but cannot reach the phone network"
+    },
+    "earlier_misconfiguration": "ST_ZXnUkgx3vvj6 was configured first; it is an INBOUND trunk"
+  },
+  "sip_phone_recording": "NOT VERIFIED: outbound trunk has no real provider address/credentials; no call placed (pre-call gate not passed).",
+  "defects_fixed_this_phase": [
+    "Post-call LLM reviewer flagged the required reference-range wording and correct doctor referrals as safety concerns (app/post_call.py prompt; analyzer 1.0.1)",
+    "Real model recorded 'declined' after a successful booking; tools now refuse decline/callback once booked (app/tools.py) + prompt line",
+    "Real model sometimes skipped the HbA1c result when the patient asked to book early; prompt and verify_identity guidance now require sharing every result (prompt 2026-10-11.2)",
+    "External OpenAI test failed because the test fixture removes OPENAI_API_KEY from os.environ; key now passed explicitly (tests only)",
+    "Settings repr printed AUTHORIZED_TEST_NUMBERS in clear in tracebacks/test output; field now repr=False (app/config.py)"
+  ],
+  "external_tests": {
+    "run_at": "2026-10-12T08:47Z",
+    "opik_trace_round_trip": "PASSED",
+    "real_llm_conversation_and_analysis": "PASSED",
+    "real_tts_then_stt_round_trip": "PASSED",
+    "livekit_credentials_and_outbound_trunk": "PASSED (existence only)"
+  },
+  "authorized_number": "+91******9949 (region IN); .env value had a space, normalized to E.164"
+}

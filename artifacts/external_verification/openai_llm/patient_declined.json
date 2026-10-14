@@ -1,0 +1,173 @@
+{
+  "record": {
+    "call_id": "call_46d3517ec62a4223",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "gpt-4.1-mini",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T16:35:31.744913Z",
+    "answered_at": "2026-10-11T16:35:31.744922Z",
+    "ended_at": "2026-10-11T16:35:38.843570Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "agent_ended_call",
+    "termination_detail": null,
+    "identity_status": "verified",
+    "health_info_disclosed": true,
+    "patient_decision": "declined",
+    "callback_preference": null,
+    "offered_slot_ids": [],
+    "appointment": null,
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "confirmed"
+        },
+        "result": {
+          "status": "verified",
+          "health_results": [
+            "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+            "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+          ],
+          "guidance": "Share these results in plain language, one at a time, without adding any diagnosis or interpretation beyond this text. Then offer to book a consultation with a doctor."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:35:34.205747Z",
+        "ended_at": "2026-10-11T16:35:34.205860Z"
+      },
+      {
+        "tool_name": "record_patient_decision",
+        "arguments": {
+          "decision": "declined",
+          "callback_preference": null
+        },
+        "result": {
+          "status": "recorded",
+          "decision": "declined"
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:35:36.799199Z",
+        "ended_at": "2026-10-11T16:35:36.799219Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T16:35:31.747512Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hello, this is an AI assistant calling from your care team. Am I speaking with Rahul?",
+        "timestamp": "2026-10-11T16:35:31.753385Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, speaking.",
+        "timestamp": "2026-10-11T16:35:32.971631Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you for confirming, Rahul. I have some health results to share. Your fasting blood glucose reading from October first, twenty twenty-six, was one hundred and eighty milligrams per deciliter. That is well above the commonly used reference range of seventy to ninety-nine milligrams per deciliter. Do you have any questions about that?",
+        "timestamp": "2026-10-11T16:35:34.222292Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "No thanks, I'll talk to my own doctor.",
+        "timestamp": "2026-10-11T16:35:35.612592Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood, Rahul. If you change your mind, we're here to help. Thank you for your time today. Goodbye.",
+        "timestamp": "2026-10-11T16:35:36.807125Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_46d3517ec62a4223",
+    "analyzer_version": "1.0.1",
+    "analyzed_at": "2026-10-11T16:35:38.846025Z",
+    "outcome": "patient_declined",
+    "outcome_reason": "Patient declined a consultation.",
+    "call_completed": true,
+    "patient_reached": true,
+    "identity_verified": true,
+    "booking_status": "not_attempted",
+    "appointment_id": null,
+    "appointment_start": null,
+    "appointment_timezone": null,
+    "no_booking_reason": "Patient declined a consultation.",
+    "callback_preference": null,
+    "biomarkers_discussed": [
+      "blood_glucose"
+    ],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking.",
+      "claims": []
+    },
+    "safety_flags": [],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": {
+      "summary": "The AI assistant called Rahul to share his fasting blood glucose result, which was above the normal reference range. Rahul declined further discussion and preferred to consult his own doctor. The call ended without scheduling an appointment.",
+      "patient_interest": "not_interested",
+      "patient_concerns": [],
+      "unresolved_questions": [],
+      "safety_concerns": []
+    },
+    "qualitative_source": "llm",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "sent",
+    "trace_id": "01a12bd1-ec76-7ab0-9b8e-74a2a46c4960",
+    "project_name": "Opik Demo Agent Observability",
+    "project_url": "https://www.comet.com/opik/divesh-soni/redirect/projects?name=Opik%20Demo%20Agent%20Observability",
+    "error": null,
+    "attempted_at": "2026-10-11T16:35:40.278140Z"
+  }
+}

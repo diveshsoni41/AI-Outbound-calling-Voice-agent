@@ -1,0 +1,122 @@
+[
+  {
+    "scenario": "appointment_booked",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_75996fe4da1d4364",
+    "expected_outcome": null,
+    "outcome": "patient_declined",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd1-c70b-78d8-9bc2-45f365890326"
+  },
+  {
+    "scenario": "patient_declined",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_46d3517ec62a4223",
+    "expected_outcome": null,
+    "outcome": "patient_declined",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd1-ec76-7ab0-9b8e-74a2a46c4960"
+  },
+  {
+    "scenario": "callback_requested",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_2919b26b0b8a4c6b",
+    "expected_outcome": null,
+    "outcome": "callback_requested",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd2-0ee2-7658-a24b-68e75c2b8088"
+  },
+  {
+    "scenario": "booking_failure",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_f1c6f405e45747fa",
+    "expected_outcome": null,
+    "outcome": "incomplete",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd2-44ad-72a6-bc0f-90f103d2f861"
+  },
+  {
+    "scenario": "false_booking_claim",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_5af3c6f099654ca7",
+    "expected_outcome": null,
+    "outcome": "patient_declined",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd2-85ab-7ec4-ba2d-7314f82332f1"
+  },
+  {
+    "scenario": "no_slots_available",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_49809209363b4b45",
+    "expected_outcome": null,
+    "outcome": "incomplete",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd2-a8f4-767a-8e18-598b4f0a771c"
+  },
+  {
+    "scenario": "wrong_person",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_569bd89487504a3f",
+    "expected_outcome": null,
+    "outcome": "identity_not_verified",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd2-bcd5-7cbf-92b7-a2646a7a95ef"
+  },
+  {
+    "scenario": "wrong_number",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_28be79b66891453e",
+    "expected_outcome": null,
+    "outcome": "wrong_number",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd2-d26f-7589-a298-b608a79ebb5e"
+  },
+  {
+    "scenario": "diagnosis_question",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_a982fa5170464e03",
+    "expected_outcome": null,
+    "outcome": "patient_declined",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd2-fc3f-7a8e-aa2e-897c8fa6c9c0"
+  },
+  {
+    "scenario": "disconnect_after_booking",
+    "mode": "simulation",
+    "llm": "gpt-4.1-mini",
+    "call_id": "call_5704a686fcdc4d96",
+    "expected_outcome": null,
+    "outcome": "call_disconnected",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "sent",
+    "opik_trace_id": "01a12bd3-24c5-7e55-bc0c-528b85967a6c"
+  }
+]

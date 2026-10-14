@@ -1,0 +1,18 @@
+{
+  "patient_id": "patient_demo_001",
+  "name": "Rahul Sharma",
+  "phone_number": "+15555550123",
+  "biomarkers": {
+    "blood_glucose": {
+      "value": 180,
+      "unit": "mg/dL",
+      "measured_at": "2026-10-01T09:00:00Z",
+      "context": "fasting"
+    },
+    "hba1c": {
+      "value": 8.2,
+      "unit": "%",
+      "measured_at": "2026-10-01T09:00:00Z"
+    }
+  }
+}

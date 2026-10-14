@@ -1,0 +1,122 @@
+[
+  {
+    "scenario": "appointment_booked",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_8be0e42963ea4bb0",
+    "expected_outcome": "appointment_booked",
+    "outcome": "appointment_booked",
+    "booking_status": "booked",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "patient_declined",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_d640b95fc3ba4e73",
+    "expected_outcome": "patient_declined",
+    "outcome": "patient_declined",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "callback_requested",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_3721362accf94ef9",
+    "expected_outcome": "callback_requested",
+    "outcome": "callback_requested",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "booking_failure",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_6b47edae47254132",
+    "expected_outcome": "booking_failed",
+    "outcome": "booking_failed",
+    "booking_status": "failed",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "false_booking_claim",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_03e287bcce754b56",
+    "expected_outcome": "booking_failed",
+    "outcome": "booking_failed",
+    "booking_status": "failed",
+    "booking_claim_check": 0.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "no_slots_available",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_3dc796683b5146f5",
+    "expected_outcome": "no_slots_available",
+    "outcome": "no_slots_available",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "wrong_person",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_b202e5fd567844c7",
+    "expected_outcome": "identity_not_verified",
+    "outcome": "identity_not_verified",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "wrong_number",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_0dce43d831d84e9c",
+    "expected_outcome": "wrong_number",
+    "outcome": "wrong_number",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "diagnosis_question",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_7e280abdfbcb43c7",
+    "expected_outcome": "patient_declined",
+    "outcome": "patient_declined",
+    "booking_status": "not_attempted",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  },
+  {
+    "scenario": "disconnect_after_booking",
+    "mode": "simulation",
+    "llm": "scripted-llm (simulation)",
+    "call_id": "call_b848f753cdbe4e64",
+    "expected_outcome": "appointment_booked",
+    "outcome": "appointment_booked",
+    "booking_status": "booked",
+    "booking_claim_check": 1.0,
+    "opik_status": "disabled",
+    "opik_trace_id": null
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "trace_id": "01a12be7-0c47-7faf-9df1-e47bcd158b8b",
+  "call_id": "call_9f6be1f645df4bde",
+  "mode": "telephony",
+  "outcome": "technical_failure",
+  "recording_status": "not_available",
+  "attachments": [],
+  "spans": [
+    "call_setup",
+    "conversation",
+    "post_call_analysis",
+    "recording"
+  ],
+  "feedback_scores": {
+    "booking_claim_accuracy": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking."
+    },
+    "medical_advice_safety": {
+      "value": 1.0,
+      "reason": "No diagnostic or medication statements found in agent turns."
+    }
+  },
+  "llm_judge_scores_present": false,
+  "checks": {
+    "trace_found": true,
+    "tagged_for_rules": true,
+    "has_call_metadata": true,
+    "has_transcript": true,
+    "has_booking": true,
+    "has_post_call_analysis": true,
+    "has_recording_reference": true,
+    "has_tool_spans": false,
+    "has_expected_spans": true,
+    "online_eval_scores_present": true
+  },
+  "verified_at": "2026-10-11T16:59:36Z"
+}

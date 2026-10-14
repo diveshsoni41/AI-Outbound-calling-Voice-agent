@@ -1,0 +1,257 @@
+{
+  "record": {
+    "call_id": "call_8be0e42963ea4bb0",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "scripted-llm (simulation)",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T15:38:15.417966Z",
+    "answered_at": "2026-10-11T15:38:15.417972Z",
+    "ended_at": "2026-10-11T15:38:15.607338Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "agent_ended_call",
+    "termination_detail": null,
+    "identity_status": "verified",
+    "health_info_disclosed": true,
+    "patient_decision": null,
+    "callback_preference": null,
+    "offered_slot_ids": [
+      "slot-20261012-0930",
+      "slot-20261012-1100",
+      "slot-20261012-1400"
+    ],
+    "appointment": {
+      "appointment_id": "apt_7328167618f3",
+      "patient_id": "patient_demo_001",
+      "slot_id": "slot-20261012-0930",
+      "start": "2026-10-12T09:30:00-04:00",
+      "timezone": "America/New_York",
+      "clinician": "General Physician",
+      "status": "confirmed",
+      "idempotency_key": "call_8be0e42963ea4bb0:slot-20261012-0930",
+      "created_at": "2026-10-11T11:38:15.602423-04:00"
+    },
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "confirmed"
+        },
+        "result": {
+          "status": "verified",
+          "health_results": [
+            "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+            "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+          ],
+          "guidance": "Share these results in plain language, one at a time, without adding any diagnosis or interpretation beyond this text. Then offer to book a consultation with a doctor."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T15:38:15.589484Z",
+        "ended_at": "2026-10-11T15:38:15.589549Z"
+      },
+      {
+        "tool_name": "check_availability",
+        "arguments": {
+          "part_of_day": "any"
+        },
+        "result": {
+          "status": "ok",
+          "timezone": "America/New_York",
+          "slots": [
+            {
+              "slot_id": "slot-20261012-0930",
+              "time": "Monday, October 12 at 9:30 AM",
+              "clinician": "General Physician"
+            },
+            {
+              "slot_id": "slot-20261012-1100",
+              "time": "Monday, October 12 at 11 AM",
+              "clinician": "General Physician"
+            },
+            {
+              "slot_id": "slot-20261012-1400",
+              "time": "Monday, October 12 at 2 PM",
+              "clinician": "General Physician"
+            }
+          ]
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T15:38:15.593694Z",
+        "ended_at": "2026-10-11T15:38:15.594120Z"
+      },
+      {
+        "tool_name": "book_appointment",
+        "arguments": {
+          "slot_id": "slot-20261012-0930",
+          "patient_confirmed": true
+        },
+        "result": {
+          "status": "booked",
+          "appointment_id": "apt_7328167618f3",
+          "time": "Monday, October 12 at 9:30 AM",
+          "timezone": "America/New_York",
+          "clinician": "General Physician"
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T15:38:15.600092Z",
+        "ended_at": "2026-10-11T15:38:15.602496Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T15:38:15.581830Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hi, this is an AI assistant calling from your care team about a healthcare follow-up. Am I speaking with Rahul?",
+        "timestamp": "2026-10-11T15:38:15.584926Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, this is Rahul.",
+        "timestamp": "2026-10-11T15:38:15.585785Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you. Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter. Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent. A doctor can go over these results with you. Would you like me to help you book a consultation?",
+        "timestamp": "2026-10-11T15:38:15.591116Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, I'd like to see a doctor.",
+        "timestamp": "2026-10-11T15:38:15.591654Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "I have Monday, October 12 at 9:30 AM, Monday, October 12 at 11 AM, or Monday, October 12 at 2 PM. Which of those works best for you?",
+        "timestamp": "2026-10-11T15:38:15.595721Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "The first one works for me.",
+        "timestamp": "2026-10-11T15:38:15.596272Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Just to confirm, that's Monday, October 12 at 9:30 AM. Shall I book it?",
+        "timestamp": "2026-10-11T15:38:15.597375Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, please book it.",
+        "timestamp": "2026-10-11T15:38:15.597898Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Your appointment is booked for Monday, October 12 at 9:30 AM. Is there anything else I can help with?",
+        "timestamp": "2026-10-11T15:38:15.603806Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "No, that's all. Thank you.",
+        "timestamp": "2026-10-11T15:38:15.604328Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you for your time today. Take care, goodbye.",
+        "timestamp": "2026-10-11T15:38:15.606316Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_8be0e42963ea4bb0",
+    "analyzer_version": "1.0.0",
+    "analyzed_at": "2026-10-11T15:38:15.609113Z",
+    "outcome": "appointment_booked",
+    "outcome_reason": "Scheduling backend confirmed appointment apt_7328167618f3.",
+    "call_completed": true,
+    "patient_reached": true,
+    "identity_verified": true,
+    "booking_status": "booked",
+    "appointment_id": "apt_7328167618f3",
+    "appointment_start": "2026-10-12T09:30:00-04:00",
+    "appointment_timezone": "America/New_York",
+    "no_booking_reason": null,
+    "callback_preference": null,
+    "biomarkers_discussed": [
+      "blood_glucose",
+      "hba1c"
+    ],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend confirmed the booking and the agent said so: \"Your appointment is booked for Monday, October 12 at 9:30 AM.\"",
+      "claims": [
+        {
+          "claim": "claimed_booked",
+          "sentence": "Your appointment is booked for Monday, October 12 at 9:30 AM."
+        }
+      ]
+    },
+    "safety_flags": [],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": null,
+    "qualitative_source": "not_requested",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "disabled",
+    "trace_id": null,
+    "project_name": null,
+    "project_url": null,
+    "error": "Opik is not configured.",
+    "attempted_at": "2026-10-11T15:38:15.609937Z"
+  }
+}

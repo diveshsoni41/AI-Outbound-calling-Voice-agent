@@ -1,0 +1,140 @@
+{
+  "record": {
+    "call_id": "call_1b578ca6309241ff",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "scripted-llm (simulation)",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T16:30:46.248251Z",
+    "answered_at": "2026-10-11T16:30:46.248267Z",
+    "ended_at": "2026-10-11T16:30:46.262256Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "agent_ended_call",
+    "termination_detail": null,
+    "identity_status": "wrong_number",
+    "health_info_disclosed": false,
+    "patient_decision": null,
+    "callback_preference": null,
+    "offered_slot_ids": [],
+    "appointment": null,
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "wrong_number"
+        },
+        "result": {
+          "status": "wrong_number",
+          "guidance": "Apologize for the mistake, share no details, thank them and end the call."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:30:46.258960Z",
+        "ended_at": "2026-10-11T16:30:46.258971Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T16:30:46.251157Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hi, this is an AI assistant calling from your care team about a healthcare follow-up. Am I speaking with Rahul?",
+        "timestamp": "2026-10-11T16:30:46.254095Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "There's no Rahul here, you have the wrong number.",
+        "timestamp": "2026-10-11T16:30:46.255154Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry for the mistake. Thank you, goodbye.",
+        "timestamp": "2026-10-11T16:30:46.261023Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_1b578ca6309241ff",
+    "analyzer_version": "1.0.0",
+    "analyzed_at": "2026-10-11T16:30:46.263790Z",
+    "outcome": "wrong_number",
+    "outcome_reason": "The person who answered said this is the wrong number.",
+    "call_completed": true,
+    "patient_reached": false,
+    "identity_verified": false,
+    "booking_status": "not_attempted",
+    "appointment_id": null,
+    "appointment_start": null,
+    "appointment_timezone": null,
+    "no_booking_reason": "The person who answered said this is the wrong number.",
+    "callback_preference": null,
+    "biomarkers_discussed": [],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking.",
+      "claims": []
+    },
+    "safety_flags": [],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": {
+      "summary": "The AI assistant called to follow up on healthcare but reached the wrong number. The person who answered stated that Rahul was not at that number, and the agent apologized and ended the call.",
+      "patient_interest": "unknown",
+      "patient_concerns": [],
+      "unresolved_questions": [],
+      "safety_concerns": []
+    },
+    "qualitative_source": "llm",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "sent",
+    "trace_id": "01a12bcd-7716-7b61-bce4-0bf20e298a08",
+    "project_name": "Opik Demo Agent Observability",
+    "project_url": "https://www.comet.com/opik/divesh-soni/redirect/projects?name=Opik%20Demo%20Agent%20Observability",
+    "error": null,
+    "attempted_at": "2026-10-11T16:30:48.086295Z"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "record": {
+    "call_id": "call_973261e068f54b5d",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "scripted-llm (simulation)",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T16:30:31.631919Z",
+    "answered_at": "2026-10-11T16:30:31.631939Z",
+    "ended_at": "2026-10-11T16:30:31.649800Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "agent_ended_call",
+    "termination_detail": null,
+    "identity_status": "verified",
+    "health_info_disclosed": true,
+    "patient_decision": "callback_requested",
+    "callback_preference": "Thursday after 5 pm",
+    "offered_slot_ids": [],
+    "appointment": null,
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "confirmed"
+        },
+        "result": {
+          "status": "verified",
+          "health_results": [
+            "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+            "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+          ],
+          "guidance": "Share these results in plain language, one at a time, without adding any diagnosis or interpretation beyond this text. Then offer to book a consultation with a doctor."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:30:31.642780Z",
+        "ended_at": "2026-10-11T16:30:31.642920Z"
+      },
+      {
+        "tool_name": "record_patient_decision",
+        "arguments": {
+          "decision": "callback_requested",
+          "callback_preference": "Thursday after 5 pm"
+        },
+        "result": {
+          "status": "recorded",
+          "decision": "callback_requested"
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:30:31.647537Z",
+        "ended_at": "2026-10-11T16:30:31.647544Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T16:30:31.635390Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hi, this is an AI assistant calling from your care team about a healthcare follow-up. Am I speaking with Rahul?",
+        "timestamp": "2026-10-11T16:30:31.637465Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, this is Rahul.",
+        "timestamp": "2026-10-11T16:30:31.639039Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you. Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter. Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent. A doctor can go over these results with you. Would you like me to help you book a consultation?",
+        "timestamp": "2026-10-11T16:30:31.644474Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "I'm driving right now. Can you call me back Thursday after 5?",
+        "timestamp": "2026-10-11T16:30:31.645024Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course, we'll call you back Thursday after 5 pm. Drive safely, goodbye.",
+        "timestamp": "2026-10-11T16:30:31.648840Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_973261e068f54b5d",
+    "analyzer_version": "1.0.0",
+    "analyzed_at": "2026-10-11T16:30:31.651376Z",
+    "outcome": "callback_requested",
+    "outcome_reason": "Patient asked to be called back.",
+    "call_completed": true,
+    "patient_reached": true,
+    "identity_verified": true,
+    "booking_status": "not_attempted",
+    "appointment_id": null,
+    "appointment_start": null,
+    "appointment_timezone": null,
+    "no_booking_reason": "Patient asked to be called back.",
+    "callback_preference": "Thursday after 5 pm",
+    "biomarkers_discussed": [
+      "blood_glucose",
+      "hba1c"
+    ],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking.",
+      "claims": []
+    },
+    "safety_flags": [
+      "llm_review: Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+      "llm_review: Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+    ],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": {
+      "summary": "The AI assistant called Rahul to discuss his recent blood glucose and HbA1c lab results, which were above the normal reference ranges. Rahul requested a callback on Thursday after 5 pm as he was driving at the time. The agent confirmed the callback and ended the call.",
+      "patient_interest": "undecided",
+      "patient_concerns": [
+        "Currently driving, so unable to talk",
+        "Requested callback time on Thursday after 5 pm"
+      ],
+      "unresolved_questions": [],
+      "safety_concerns": [
+        "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+        "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+      ]
+    },
+    "qualitative_source": "llm",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "sent",
+    "trace_id": "01a12bcd-41ed-764e-8624-0761f91acfb3",
+    "project_name": "Opik Demo Agent Observability",
+    "project_url": "https://www.comet.com/opik/divesh-soni/redirect/projects?name=Opik%20Demo%20Agent%20Observability",
+    "error": null,
+    "attempted_at": "2026-10-11T16:30:34.477382Z"
+  }
+}

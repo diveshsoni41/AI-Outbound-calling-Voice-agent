@@ -1,0 +1,196 @@
+{
+  "record": {
+    "call_id": "call_5e3282546e7e4b52",
+    "mode": "simulation",
+    "patient": {
+      "patient_id": "patient_demo_001",
+      "phone_number_masked": "+1********23",
+      "biomarkers": {
+        "blood_glucose": {
+          "value": 180.0,
+          "unit": "mg/dL",
+          "measured_at": "2026-10-01T09:00:00+00:00",
+          "context": "fasting"
+        },
+        "hba1c": {
+          "value": 8.2,
+          "unit": "%",
+          "measured_at": "2026-10-01T09:00:00+00:00"
+        }
+      }
+    },
+    "agent": {
+      "agent_name": "healthcare-outbound-agent",
+      "agent_version": "0.1.0",
+      "llm_model": "scripted-llm (simulation)",
+      "stt_model": null,
+      "tts_model": null,
+      "tts_voice": null,
+      "prompt_version": "2026-10-11.1"
+    },
+    "room_name": null,
+    "started_at": "2026-10-11T16:30:48.498451Z",
+    "answered_at": "2026-10-11T16:30:48.498463Z",
+    "ended_at": "2026-10-11T16:30:48.514705Z",
+    "dial_status": "simulated",
+    "sip_status_code": null,
+    "sip_status": null,
+    "termination_reason": "agent_ended_call",
+    "termination_detail": null,
+    "identity_status": "verified",
+    "health_info_disclosed": true,
+    "patient_decision": "declined",
+    "callback_preference": null,
+    "offered_slot_ids": [],
+    "appointment": null,
+    "tool_events": [
+      {
+        "tool_name": "verify_identity",
+        "arguments": {
+          "response": "confirmed"
+        },
+        "result": {
+          "status": "verified",
+          "health_results": [
+            "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+            "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+          ],
+          "guidance": "Share these results in plain language, one at a time, without adding any diagnosis or interpretation beyond this text. Then offer to book a consultation with a doctor."
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:30:48.505586Z",
+        "ended_at": "2026-10-11T16:30:48.505705Z"
+      },
+      {
+        "tool_name": "record_patient_decision",
+        "arguments": {
+          "decision": "declined",
+          "callback_preference": null
+        },
+        "result": {
+          "status": "recorded",
+          "decision": "declined"
+        },
+        "ok": true,
+        "error": null,
+        "started_at": "2026-10-11T16:30:48.511977Z",
+        "ended_at": "2026-10-11T16:30:48.511981Z"
+      }
+    ],
+    "transcript": [
+      {
+        "speaker": "patient",
+        "text": "Hello?",
+        "timestamp": "2026-10-11T16:30:48.500333Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Hi, this is an AI assistant calling from your care team about a healthcare follow-up. Am I speaking with Rahul?",
+        "timestamp": "2026-10-11T16:30:48.502203Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Yes, this is Rahul.",
+        "timestamp": "2026-10-11T16:30:48.502798Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you. Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter. Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent. A doctor can go over these results with you. Would you like me to help you book a consultation?",
+        "timestamp": "2026-10-11T16:30:48.507148Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Does this mean I have diabetes?",
+        "timestamp": "2026-10-11T16:30:48.507799Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm not able to answer that. Only a doctor can explain what these results mean for you. Would you like me to book a consultation so you can ask them?",
+        "timestamp": "2026-10-11T16:30:48.509247Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "patient",
+        "text": "Not right now, thanks.",
+        "timestamp": "2026-10-11T16:30:48.509773Z",
+        "interrupted": false
+      },
+      {
+        "speaker": "agent",
+        "text": "That's okay. Thank you for your time today. Take care, goodbye.",
+        "timestamp": "2026-10-11T16:30:48.513661Z",
+        "interrupted": false
+      }
+    ],
+    "recording": {
+      "status": "not_available",
+      "uri": null,
+      "content_type": null,
+      "size_bytes": null,
+      "started_at": null,
+      "reason": "Simulation mode has no audio."
+    },
+    "errors": []
+  },
+  "analysis": {
+    "call_id": "call_5e3282546e7e4b52",
+    "analyzer_version": "1.0.0",
+    "analyzed_at": "2026-10-11T16:30:48.516218Z",
+    "outcome": "patient_declined",
+    "outcome_reason": "Patient declined a consultation.",
+    "call_completed": true,
+    "patient_reached": true,
+    "identity_verified": true,
+    "booking_status": "not_attempted",
+    "appointment_id": null,
+    "appointment_start": null,
+    "appointment_timezone": null,
+    "no_booking_reason": "Patient declined a consultation.",
+    "callback_preference": null,
+    "biomarkers_discussed": [
+      "blood_glucose",
+      "hba1c"
+    ],
+    "booking_claim_check": {
+      "value": 1.0,
+      "reason": "Backend status is 'not_attempted' and the agent never claimed a booking.",
+      "claims": []
+    },
+    "safety_flags": [
+      "llm_review: Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+      "llm_review: Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+    ],
+    "tool_failures": [],
+    "contradictions": [],
+    "qualitative": {
+      "summary": "The AI assistant called Rahul to discuss his recent blood glucose and HbA1c lab results, which were above the normal reference ranges. Rahul asked if this meant he had diabetes, but the agent deferred the diagnosis to a doctor and offered to book a consultation. Rahul declined the appointment, and the call ended politely.",
+      "patient_interest": "not_interested",
+      "patient_concerns": [
+        "Does this mean I have diabetes?"
+      ],
+      "unresolved_questions": [
+        "Does this mean I have diabetes?"
+      ],
+      "safety_concerns": [
+        "Your fasting blood glucose reading from October 1, 2026 was 180 milligrams per deciliter. That is well above the commonly used reference range for fasting blood glucose, which is 70 to 99 milligrams per deciliter.",
+        "Your HbA1c reading from October 1, 2026 was 8.2 percent. HbA1c reflects your average blood sugar over roughly the past three months. That is well above the commonly used reference range for HbA1c, which is below 5.7 percent."
+      ]
+    },
+    "qualitative_source": "llm",
+    "analysis_errors": []
+  },
+  "telemetry": {
+    "status": "sent",
+    "trace_id": "01a12bcd-81e3-71ce-9d0f-26430bb5d3d5",
+    "project_name": "Opik Demo Agent Observability",
+    "project_url": "https://www.comet.com/opik/divesh-soni/redirect/projects?name=Opik%20Demo%20Agent%20Observability",
+    "error": null,
+    "attempted_at": "2026-10-11T16:30:50.851596Z"
+  }
+}
